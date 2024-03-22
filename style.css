@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: k 2s infinite linear ;
+}
+@keyframes  k{
+    0% {
+        background-color: rgba(33, 27, 37, 0.7);
+    }
+    25%{
+        background-color: rgb(39, 31, 44, 0.7);
+    }
+    50%{
+        background-color: rgb(39, 30, 44, 0.7);
+    }
+    75%{
+        background-color: rgb(39, 31, 44, 0.7);
+    }
+    100%{
+        background-color: rgb(33, 27, 37, 0.7);
+    }
+}
+.calculator{
+    border:1px solid rgb(0, 0, 0);
+    padding :20px;
+    border-radius: 20px;
+    background-color: rgba(33, 27, 37, 0.97) ;
+    box-shadow: -4px -6px 17px rgb(0, 0, 0);
+}
+input{
+    width: 320px;
+    padding:24px;
+    margin: 10px;
+    background:transparent;
+    font-size: 42px;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: -1px -1px 9px rgb(0, 0, 0);
+    text-align: right;
+    cursor: pointer;
+}
+input::placeholder{
+    color: white;
+
+}
+
+button{
+    border: none;
+    width: 60px;
+    font-size: 20px;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(255, 194, 183) ;
+    border-radius: 50%;
+    margin:10px;
+    box-shadow: -8px -8px 15px  ;
+}
+button.operator{
+    background-color: rgb(253, 209, 86);
+}
